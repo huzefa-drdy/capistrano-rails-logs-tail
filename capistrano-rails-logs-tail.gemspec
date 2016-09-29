@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['ayaya@ayaya.tw', 'oss@findhotel.net']
   spec.summary       = %q(Tail logs from Ruby on Rails server.)
   spec.description   = %q(A capistrano task to tail logs from Ruby on Rails server.)
-  spec.homepage      = 'https://rubygems.org/gems/capistrano-rails-logs-tail'
+  spec.homepage      = 'https://github.com/FindHotel/capistrano-rails-logs-tail'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
