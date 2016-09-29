@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'capistrano/rails_tail_log/version'
+require 'capistrano/rails/logs/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'capistrano-rails-tail-log'
-  spec.version       = Capistrano::RailsTailLog::VERSION
-  spec.authors       = ['ayaya']
-  spec.email         = ['ayaya@ayaya.tw']
-  spec.summary       = %q(Tail rails logs from server.)
-  spec.description   = %q(Tail rails logs from server.)
-  spec.homepage      = ''
+  spec.name          = 'capistrano-rails-logs-tail'
+  spec.version       = Capistrano::Rails::Logs::VERSION
+  spec.authors       = ['ayaya', 'oss92']
+  spec.email         = ['ayaya@ayaya.tw', 'oss@findhotel.net']
+  spec.summary       = %q(Tail logs from Ruby on Rails server.)
+  spec.description   = %q(A capistrano task to tail logs from Ruby on Rails server.)
+  spec.homepage      = 'https://rubygems.org/gems/capistrano-rails-logs-tail'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")

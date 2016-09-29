@@ -1,12 +1,12 @@
-# Capistrano::RailsTailLog
+# Capistrano::Rails::Logs
 
-Tail rails logs from server.
+Tail logs from Ruby on Rails server.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'capistrano-rails-tail-log', require: false, git: 'https://github.com/FindHotel/capistrano-rails-tail-log.git'
+    gem 'capistrano-rails-logs-tail'
 
 And then execute:
 
@@ -14,8 +14,8 @@ And then execute:
 
 ## Usage
 
-1. Add `require 'capistrano/rails_tail_log'` in your `Capfile`.
-2. Run tail task: `cap staging rails:logs`
+1. Add `require 'capistrano/rails/logs'` in your `Capfile`.
+2. Run task to tail your logs: `cap staging rails:logs`
 
 ## Contributing
 
