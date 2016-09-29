@@ -1,3 +1,5 @@
+[![Gem Version](https://img.shields.io/gem/v/capistrano-rails-logs-tail.svg)](https://rubygems.org/gems/capistrano-rails-logs-tail)
+
 # Capistrano::Rails::Logs
 
 Tail logs from Ruby on Rails server.
