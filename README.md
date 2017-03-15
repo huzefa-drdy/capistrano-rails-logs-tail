@@ -17,11 +17,25 @@ And then execute:
 ## Usage
 
 1. Add `require 'capistrano/rails/logs'` in your `Capfile`.
-2. Run task to tail your logs: `cap staging rails:logs`
+2. Run any of the following tasks to tail your logs:
+
+```
+# defaults to role :app and shows 20 lines before
+cap staging rails:logs
+```
+
+Or to specify a role and/or number of lines
+```
+# specify a different role as a first argument
+cap staging rails:logs[worker_1]
+
+# specify number of lines as a second argument (role must be present)
+cap staging rails:logs[worker_1, 100]
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/ayamomiji/capistrano-rails-tail-log/fork )
+1. Fork it ( https://github.com/FindHotel/capistrano-rails-logs-tail/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
