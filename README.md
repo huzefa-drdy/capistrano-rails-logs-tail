@@ -30,7 +30,10 @@ Or to specify a role and/or number of lines
 cap staging rails:logs[worker_1]
 
 # specify number of lines as a second argument (role must be present)
-cap staging rails:logs[worker_1, 100]
+cap staging rails:logs[worker_1,100]
+
+# Remember to escape the comma and square brackets if you are using ZSH
+cap production rails:logs\[worker_1\,1000\]
 ```
 
 ## Contributing
