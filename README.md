@@ -29,7 +29,10 @@ Or to specify a role and/or number of lines
 # specify a different role as a first argument
 cap staging rails:logs[worker_1]
 
-# specify number of lines as a second argument (role must be present)
+# specify number of lines as a second argument
+# default role (:app)
+cap staging rails:logs[,100]
+# or
 cap staging rails:logs[worker_1,100]
 
 # Remember to escape the comma and square brackets if you are using ZSH
