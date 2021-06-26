@@ -7,7 +7,11 @@ namespace :rails do
     number_of_lines = args[:lines].to_i
     puts "Tailing #{fetch(:rails_env)} logs on role (#{target_role})"
     on roles(target_role) do
-      execute "tail -f -n #{number_of_lines} #{current_path}/log/#{fetch(:rails_env)}.log"
+      if fetch(:rails_env) == "staging" 
+        execute "tail -f -n #{number_of_lines} /opt/nginx/logs/error.log"
+      else
+        execute "tail -f -n #{number_of_lines} #{current_path}/log/#{fetch(:rails_env)}.log"
+      end
     end
   end
 end
